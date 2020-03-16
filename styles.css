@@ -1,0 +1,23 @@
+body {
+    background: url(./assets/BG-1080.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+.white-text {
+    color: #ebebeb;
+}
+
+a {
+    color: #ebebeb;
+}
+
+.container {
+    /* margin: 0 auto; */
+}
+
+.row {
+    text-align: center;
+}
