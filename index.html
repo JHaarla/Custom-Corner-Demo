@@ -56,20 +56,27 @@
         <div class="row">
             <div class="col-lg">
                 <h3 class="text-center">Technologies Used</h3>
-                <h4>React</h4>
-                <li>Bootstrap-React</li>
-                <li>Roact-Toastify</li>
-                <h4>Mongo</h4>
-                <li>Node - Mongoose</li>
-                <li>Mongoose-bcrypt</li>
-                <li>Python - pymongo</li>
-                <h4>Design</h4>
-                <li>Figma</li>
-                <h4>Node</h4>
-                <li>JSON Web Token</li>
-                <h4>Scraping</h4>
-                <li>NodeJS - Axios, Cheerio, Puppeteer</li>
-                <li>Python - requests, BeautifulSoup (bs4)</li>
+
+                <div class="row">
+                    <div class="col-lg">
+                        <h4>React</h4>
+                        <li>Bootstrap-React</li>
+                        <li>React-Toastify</li>
+                        <h4>Design</h4>
+                        <li>Figma</li>
+                        <h4>Scraping</h4>
+                        <li>NodeJS - Axios, Cheerio, Puppeteer</li>
+                        <li>Python - requests, BeautifulSoup (bs4)</li>
+                    </div>
+                    <div class="col-lg">
+                        <h4>Mongo</h4>
+                        <li>Node - Mongoose</li>
+                        <li>Mongoose-bcrypt</li>
+                        <li>Python - pymongo</li>
+                        <h4>Node</h4>
+                        <li>JSON Web Token</li>
+                    </div>
+                </div>
 
             </div>
             <div class="col-lg">
@@ -92,17 +99,20 @@
                     action.</p>
             </div>
             <div class="col-lg">
-                    <video class="embed-responsive" controls>
-                        <source src="./assets/CCLogin.mp4" type="video/mp4">
-                        Your browser does not support the video tag. Try using Chrome or FireFox.
-                    </video>
+                <video class="embed-responsive" controls>
+                    <source src="./assets/CCLogin.mp4" type="video/mp4">
+                    Your browser does not support the video tag. Try using Chrome or FireFox.
+                </video>
             </div>
         </div>
 
         <div class="row">
             <div class="col-lg">
                 <h3 class="text-center">Creating & Selecting Clients</h3>
-                <p>When the user selects "Clients" from the dropdown menu, they'll be brought to a page where they can manage the clients in the system. By selecting different clients, the user can add itens to the correct collections. Also, when deleting a client, all associated saved items in that collection get purged from the database. Please see the video for an example.</p>
+                <p>When the user selects "Clients" from the dropdown menu, they'll be brought to a page where they can
+                    manage the clients in the system. By selecting different clients, the user can add itens to the
+                    correct collections. Also, when deleting a client, all associated saved items in that collection get
+                    purged from the database. Please see the video for an example.</p>
             </div>
             <div class="col-lg">
                 <video class="embed-responsive" controls>
@@ -115,7 +125,19 @@
         <div class="row">
             <div class="col-lg">
                 <h4 class="text-center">Displaying Data, Filtering & The Tackboard</h4>
-                <p>The Tackboard is where all saved items for each client will be displayed so they can be further shared. It is sort of a staging area. Once a client is selected, the user can can sort through all the aggregated data to make their selections. The Navigation items are dynamically populated from the scrapes. Only the available items are displayed. All the data is categorized by room type into further subcategories. The filtering works via toggle switches. They are attached to each vendor. By toggling a vendor on/off, that vendors items will be either shown or hidden. This happens in real time. To add an item to the Tackboard, the user will click the red thumbtack in the upper right corner of each item card. Once an item is added to the Tackboard there is a toast notification letting the user know the selection was successful. Multiple clicks will add multiple iterations of the item. Each item has a description line. If the description is longer than the card has to display, the text scrolls by hovering over it. If the user needs more information about any particular item, there is also a link back to the Vendor's site directly to the item. Please see the video for a demonstration.</p>
+                <p>The Tackboard is where all saved items for each client will be displayed so they can be further
+                    shared. It is sort of a staging area. Once a client is selected, the user can can sort through all
+                    the aggregated data to make their selections. The Navigation items are dynamically populated from
+                    the scrapes. Only the available items are displayed. All the data is categorized by room type into
+                    further subcategories. The filtering works via toggle switches. They are attached to each vendor. By
+                    toggling a vendor on/off, that vendors items will be either shown or hidden. This happens in real
+                    time. To add an item to the Tackboard, the user will click the red thumbtack in the upper right
+                    corner of each item card. Once an item is added to the Tackboard there is a toast notification
+                    letting the user know the selection was successful. Multiple clicks will add multiple iterations of
+                    the item. Each item has a description line. If the description is longer than the card has to
+                    display, the text scrolls by hovering over it. If the user needs more information about any
+                    particular item, there is also a link back to the Vendor's site directly to the item. Please see the
+                    video for a demonstration.</p>
             </div>
             <div class="col-lg">
                 <video class="embed-responsive" controls>
@@ -128,7 +150,15 @@
         <div class="row">
             <div class="col-lg">
                 <h4 class="text-center">Pinterest Integration</h4>
-                <p>Once the user is ready to share the collection of items with their client, they can save the items to a Pinterest board of their choice. (Sharing via Pinterest was a request by the client) Clicking on the red "Save" button at the top right of the Tackboard brings up a window that allows the user to select an item to add to a Pinterest board. The pinned item will also link back to the original vendor's URL for that item. If the user is not currently logged into a Pinterest account, they are prompted to sign in or create an account first. Another way of sharing the collection is via the "Create BOM" button right below the Pinterest button. This creates a PDF that can be downloaded and shared. The PDF also has links back to the original vendor for each item. Please see the video for a demonstration.</p>
+                <p>Once the user is ready to share the collection of items with their client, they can save the items to
+                    a Pinterest board of their choice. (Sharing via Pinterest was a request by the client) Clicking on
+                    the red "Save" button at the top right of the Tackboard brings up a window that allows the user to
+                    select an item to add to a Pinterest board. The pinned item will also link back to the original
+                    vendor's URL for that item. If the user is not currently logged into a Pinterest account, they are
+                    prompted to sign in or create an account first. Another way of sharing the collection is via the
+                    "Create BOM" button right below the Pinterest button. This creates a PDF that can be downloaded and
+                    shared. The PDF also has links back to the original vendor for each item. Please see the video for a
+                    demonstration.</p>
             </div>
             <div class="col-lg">
                 <video class="embed-responsive" controls>
@@ -155,18 +185,13 @@
                 </div>
             </div>
             <div class="col-lg">
-                
+
             </div>
         </div>
 
-
-
-
-
     </div>
 
-    <footer class="footer white-text">Demo Site by Jarkko Haarla</footer>
-
+    <footer class="footer white-text text-center">Demo Site by Jarkko Haarla</footer>
 
 </body>
 
