@@ -18,10 +18,6 @@ a {
     margin-bottom: 1rem;
 }
 
-/* .img-decoration {
-
-} */
-
 .my-align > * {
     vertical-align: middle;
 }
@@ -59,16 +55,13 @@ a {
     padding-top:.4rem;
 }
 
-
 .nav-link {
     transition: all 0.3s;
 }
 .nav-link:hover {
     color: #ebebeb;
     transform: scale(1.15);
-    /* font-weight: bold; */
 }
-
 
 
 /* To Top Button */
@@ -78,11 +71,9 @@ a {
     bottom: 20px;
     right: 30px;
     z-index: 99;
-    /* font-size: 18px; */
     border: #ebebeb;
     border-width: 1px;
     border-style: solid;
-    /* outline: 1px; */
     background-color: #015D76;
     color: #ebebeb;
     cursor: pointer;
@@ -98,8 +89,8 @@ a {
     border-style: solid;
     color: #002d39;
     font-weight: bold;
-
   }
+
 
   /* Media Queries */
   @media only screen and (max-width: 768px) {
@@ -125,7 +116,4 @@ a {
         opacity: .75;
         height: 4.3rem;
     }
-    
-    
-    
   }
