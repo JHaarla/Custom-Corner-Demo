@@ -88,6 +88,7 @@ a {
     cursor: pointer;
     padding: .75rem;
     border-radius: 4px;
+    opacity: .65;
   }
   
   #myBtn:hover {
@@ -97,6 +98,7 @@ a {
     border-style: solid;
     color: #002d39;
     font-weight: bold;
+
   }
 
   /* Media Queries */
