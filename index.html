@@ -1,83 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Custom Corner Demo</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="./styles.css">
 </head>
+
 <body>
     <!-- <div class="bg"></div> -->
 
-    <div class="header white-text">LOGO  Demo Site</div>
+    <div class="header white-text">LOGO Demo Site</div>
 
     <nav class="nav">
-        
-            <a class="nav-link" href="#">Intro</a>
-            <a class="nav-link" href="#">Tech</a>
-            <a class="nav-link" href="#">Infrastructure</a>
-            <a class="nav-link" href="#">Login</a>
-            <a class="nav-link" href="#">Clients</a>
-            <a class="nav-link" href="#">Data</a>
-            <a class="nav-link" href="#">Sharing</a>
-            <a class="nav-link" href="#">Dev Team</a>
-        
+
+        <a class="nav-link" href="#">Intro</a>
+        <a class="nav-link" href="#">Tech</a>
+        <a class="nav-link" href="#">Infrastructure</a>
+        <a class="nav-link" href="#">Login</a>
+        <a class="nav-link" href="#">Clients</a>
+        <a class="nav-link" href="#">Data</a>
+        <a class="nav-link" href="#">Sharing</a>
+        <a class="nav-link" href="#">Dev Team</a>
+
     </nav>
 
 
     <div class="container white-text">
-        
+
         <div class="row">
-            <div class="col-sm">
+            <div class="col-lg">
+                <h3 class="text-center">Welcome to the Custom Corner Demo Site</h3>
+                <p>The purpose of Custom Corner is to streamline an interior designer's workflow by aggregating data
+                    from various vendors and then sharing the collection with their clients. Since the live deployment
+                    of Custom Corner is used by a company and only allows authenticated users, this site serves as a
+                    demonstration of the app's functionality. Custom Corner is a full stack MERN (Mongo, Express, React,
+                    Node) app that scrapes various vendor's sites for data to be displayed. The user has the ability to
+                    filter through this aggregated data and make selections to be shared with their clients. Sharing can
+                    be done through Pinterest or there is a built-in PDF creator that makes sharing easy as well. Let's
+                    explore the functionality of Custom Corner!</p>
+            </div>
+            <div class="col-lg my-align">
+                <p>
+                    <figure class="figure">
+                        <img class="img-fluid figure-img img-decoration" src="assets/CustomCornerDemo.png">
+                        <figcaption>Screenshot of Custom Corner homepage</figcaption>
+                    </figure>
+                </p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg">
+                <h3 class="text-center">Technologies Used</h3>
+                <h4>React</h4>
+                <li>Bootstrap-React</li>
+                <li>Roact-Toastify</li>
+                <h4>Mongo</h4>
+                <li>Node - Mongoose</li>
+                <li>Mongoose-bcrypt</li>
+                <li>Python - pymongo</li>
+                <h4>Design</h4>
+                <li>Figma</li>
+                <h4>Node</h4>
+                <li>JSON Web Token</li>
+                <h4>Scraping</h4>
+                <li>NodeJS - Axios, Cheerio, Puppeteer</li>
+                <li>Python - requests, BeautifulSoup (bs4)</li>
+
+            </div>
+            <div class="col-lg">
+                <h3 class="text-center">Infrastructure</h3>
+                <p>Custom Corner is hosted on the Google Cloud platform and is currently using Docker to run the
+                    application. There are multiple containers running on the server:</p>
+                <li>Mongo - Houses the database for the application</li>
+                <li>NGINX - performs reverse proxy and handles SSL. Also redirects http connections to https</li>
+                <li>Certbot - Automates renewing the SSL certification through Let's Encrypt</li>
+                <li>Node - Runs the React app</li>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg">
+                <h3 class="text-center">Logging In</h3>
+                <p>Once the user is on the landing page, they will be able to login with the administrator provided
+                    credentials. Access to Custom Corner without credentials is not allowed. Clicking the "Login" button
+                    brings up a modal where the user's credentials can be entered. Please see the video to see this in
+                    action.</p>
+            </div>
+            <div class="col-lg">
+                    <video class="embed-responsive" controls>
+                        <source src="./assets/CCLogin.mp4" type="video/mp4">
+                        Your browser does not support the video tag. Try using Chrome or FireFox.
+                    </video>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg">
+                <h3 class="text-center">Creating & Selecting Clients</h3>
+                <p>When the user selects "Clients" from the dropdown menu, they'll be brought to a page where they can manage the clients in the system. By selecting different clients, the user can add itens to the correct collections. Also, when deleting a client, all associated saved items in that collection get purged from the database. Please see the video for an example.</p>
+            </div>
+            <div class="col-lg">
+                <video class="embed-responsive" controls>
+                    <source src="./assets/CCClients.mp4" type="video/mp4">
+                    Your browser does not support the video tag. Try using Chrome or FireFox.
+                </video>
+
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg">
                 Column 1
             </div>
-            <div class="col-sm">
+            <div class="col-lg">
                 Column 2
             </div>
         </div>
 
         <div class="row">
-            <div class="col-sm">
+            <div class="col-lg">
                 Column 1
             </div>
-            <div class="col-sm">
-                Column 2
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-sm">
-                Column 1
-            </div>
-            <div class="col-sm">
-                Column 2
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-sm">
-                Column 1
-            </div>
-            <div class="col-sm">
-                Column 2
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-sm">
-                Column 1
-            </div>
-            <div class="col-sm">
-                Column 2
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-sm">
-                Column 1
-            </div>
-            <div class="col-sm">
+            <div class="col-lg">
                 Column 2
             </div>
         </div>
@@ -90,6 +139,7 @@
 
     <footer class="footer white-text">Footer</footer>
 
-    
+
 </body>
+
 </html>
